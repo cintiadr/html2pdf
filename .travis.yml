@@ -1,4 +1,9 @@
 language: java
 
+cache:
+  directories:
+  - $HOME/.m2
+
+
 script:
-  - bin/generate-upload-files.sh
+  - mvn clean deploy
